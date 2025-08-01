@@ -9,18 +9,56 @@ body {
 
 
 header {
-  
   background-color: #c4b291;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-
-
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  flex: 1;
+}
 
-  
+.search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  background-color: #fff;
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d89b4b;
+  border: 1px solid #d89b4b;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 0;
+}
+
+.search-button:hover {
+  background-color: #f3a847;
+}
+
+.search-button img {
+  width: 18px;
+  height: 18px;
+}
 
 
 .container {
